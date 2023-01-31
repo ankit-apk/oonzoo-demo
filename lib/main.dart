@@ -2,10 +2,10 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pubmate_light/const/bloc_providers.dart';
+import 'package:pubmate_light/const/routes.dart';
 import 'package:sizer/sizer.dart';
 
 import 'firebase_options.dart';
-import 'modules/authentication/views/sign_in.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,7 +34,8 @@ class OonzooApp extends StatelessWidget {
               useMaterial3: true,
               primarySwatch: Colors.blue,
             ),
-            home: const LoginScreen(),
+            initialRoute: AppRoutes.appRoutes.entries.first.key,
+            routes: AppRoutes.appRoutes,
           ),
         );
       },

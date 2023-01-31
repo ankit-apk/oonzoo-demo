@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:pubmate_light/const/resource.dart';
+import 'package:pubmate_light/const/routes.dart';
 import 'package:pubmate_light/modules/authentication/bloc/authentication_bloc.dart';
 import 'package:pubmate_light/theme/colors.dart';
 import 'package:pubmate_light/theme/textstyles.dart';
+import 'package:pubmate_light/utils/ontap_extension.dart';
 import 'package:pubmate_light/utils/sized_box.dart';
 import 'package:pubmate_light/utils/unfocus.dart';
+import 'package:sizer/sizer.dart';
 
 import '../../../widgets/custom_textfield.dart';
 
@@ -55,10 +58,8 @@ class LoginScreen extends StatelessWidget {
                       "Don't have an account? ",
                       style: AppTextStyles.bodyLight,
                     ),
-                    Text(
-                      "Sign Up",
-                      style: AppTextStyles.linkText,
-                    )
+                    Text("Sign Up", style: AppTextStyles.linkText).onTap(
+                        () => Navigator.pushNamed(context, AppRoutes.signup))
                   ],
                 ),
                 5.bh(),
@@ -67,6 +68,7 @@ class LoginScreen extends StatelessWidget {
                       context.read<AuthenticationBloc>().emailController,
                   label: "Email",
                   isPassword: false,
+                  padding: EdgeInsets.symmetric(horizontal: 4.w),
                 ),
                 3.bh(),
                 CustomTextField(
@@ -75,6 +77,7 @@ class LoginScreen extends StatelessWidget {
                       context.read<AuthenticationBloc>().passwordController,
                   label: "Password",
                   isPassword: true,
+                  padding: EdgeInsets.symmetric(horizontal: 4.w),
                 ),
                 7.bh(),
                 Text(

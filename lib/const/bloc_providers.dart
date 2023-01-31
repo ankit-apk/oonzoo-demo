@@ -7,10 +7,10 @@ class AppBlocProviders {
   const AppBlocProviders._();
 
 //---------------------------------------------------------------
-  static final authBloc = BlocProvider<AuthenticationBloc>(
+  static final _authBloc = BlocProvider<AuthenticationBloc>(
     create: (BuildContext context) => AuthenticationBloc(),
     child: const LoginScreen(),
   );
 //---------------------------------------------------------------
-  static final List<BlocProvider> appBlocs = [authBloc];
+  static List<BlocProvider> get appBlocs => [_authBloc];
 }
