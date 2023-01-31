@@ -12,5 +12,7 @@ class AppColors {
 
   //----------------Text Colors-------------------------
   static const Color light = Color(0xff757575);
+  static const Color medium = Color(0xff6B6F7A);
   static const Color bold = Color(0xff404553);
+  static const Color link = Color(0xff3866DF);
 }
