@@ -6,3 +6,5 @@ abstract class AuthenticationEvent {}
 class StartLoginEvent extends AuthenticationEvent {}
 
 class StartSignupEvent extends AuthenticationEvent {}
+
+class CheckCurrentUser extends AuthenticationEvent {}

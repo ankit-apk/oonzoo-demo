@@ -124,6 +124,16 @@ class AuthenticationBloc
             emit(SignupFailedState(e));
           }
         }
+        /*
+        This event keeps track of whether the user is logged in.
+        It handles the navigation initially to send user to home screen
+        or login in based on currentUser prop in firebase auth
+        */
+        if (event is CheckCurrentUser) {
+          if (_auth.currentUser != null) {
+            emit(CurrentUserExistsState());
+          }
+        }
       },
     );
   }

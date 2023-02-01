@@ -26,3 +26,5 @@ class SignupFailedState extends AuthenticationState {
 }
 
 class AuthOperationInProgress extends AuthenticationState {}
+
+class CurrentUserExistsState extends AuthenticationState {}
