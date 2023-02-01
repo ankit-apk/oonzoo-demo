@@ -132,6 +132,8 @@ class AuthenticationBloc
         if (event is CheckCurrentUser) {
           if (_auth.currentUser != null) {
             emit(CurrentUserExistsState());
+          } else {
+            emit(AuthenticationInitial());
           }
         }
       },

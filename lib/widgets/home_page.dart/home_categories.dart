@@ -9,13 +9,12 @@ class HomeCategories extends StatelessWidget {
   });
 
   final List<String> categories = [
-    R.ASSETS_IMAGES_BEAUTY_AVIF,
-    R.ASSETS_IMAGES_MOBILES_AVIF,
-    R.ASSETS_IMAGES_NOON_AVIF,
+    R.ASSETS_IMAGES_BEAUTY_PNG,
+    R.ASSETS_IMAGES_MOBILES_PNG,
+    R.ASSETS_IMAGES_NOON_PNG,
     R.ASSETS_IMAGES_OFFERS_PNG,
-    R.ASSETS_IMAGES_GAMING_AVIF,
-    R.ASSETS_IMAGES_APPLIANCES_AVIF,
-    R.ASSETS_IMAGES_WOMEN_AVIF,
+    R.ASSETS_IMAGES_GAMING_PNG,
+    R.ASSETS_IMAGES_WOMEN_PNG,
     R.ASSETS_IMAGES_LAPTOP_PNG,
   ];
 
@@ -30,7 +29,7 @@ class HomeCategories extends StatelessWidget {
         child: GridView.count(
           scrollDirection: Axis.horizontal,
           crossAxisCount: 2,
-          children: List.generate(8, (index) {
+          children: List.generate(7, (index) {
             return Container(
               margin: const EdgeInsets.all(8),
               child: Center(
