@@ -9,6 +9,7 @@ class AppColors {
 
   static const Color primary = Color(0xffFFFFFF);
   static const Color border = Color(0xffD8DCE8);
+  static const Color errors = Color(0xffff9494);
 
   //----------------Text Colors-------------------------
   static const Color light = Color(0xff757575);

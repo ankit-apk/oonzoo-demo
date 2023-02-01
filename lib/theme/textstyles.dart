@@ -45,4 +45,9 @@ class AppTextStyles {
     fontWeight: FontWeight.bold,
   );
   //---------------------------------------------------
+  static final TextStyle errorText = TextStyle(
+    color: AppColors.primary,
+    fontSize: 15.sp,
+    fontWeight: FontWeight.w500,
+  );
 }
