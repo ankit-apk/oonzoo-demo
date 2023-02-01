@@ -16,4 +16,8 @@ class AppColors {
   static const Color medium = Color(0xff6B6F7A);
   static const Color bold = Color(0xff404553);
   static const Color link = Color(0xff3866DF);
+  //-----------------App Section colors-----------------
+  static const Color homeYellow = Color(0xffFEF1BF);
+  static const Color homeRecommended = Color(0xffF2F4FD);
+  static const Color ratingsGreen = Color(0xff37AE02);
 }

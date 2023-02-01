@@ -27,6 +27,24 @@ class AppTextStyles {
     fontWeight: FontWeight.w400,
   );
   //---------------------------------------------------
+  static final TextStyle bodyDark = TextStyle(
+    color: AppColors.bold,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+  //---------------------------------------------------
+  static final TextStyle pricesDark = TextStyle(
+    color: AppColors.bold,
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w600,
+  );
+  //---------------------------------------------------
+  static final TextStyle ratingsLight = TextStyle(
+    color: AppColors.primary,
+    fontSize: 12.sp,
+    fontWeight: FontWeight.w600,
+  );
+  //---------------------------------------------------
   static final TextStyle textfieldHeader = TextStyle(
     color: AppColors.medium,
     fontSize: 12.sp,
